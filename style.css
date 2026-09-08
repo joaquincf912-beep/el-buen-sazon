@@ -1294,18 +1294,231 @@ button {
   font-size: 0.9rem;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== ULTIMATE MOBILE & TOUCH OPTIMIZATION ===== */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
 @media (max-width: 768px) {
-  .hero-content h2 {
-    font-size: 2.6rem;
+  /* Mobile Container & General Spacing */
+  .container {
+    padding: 0 14px;
   }
 
+  /* Navbar Mobile Optimizations */
+  .navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-brand h1 {
+    font-size: 1.25rem;
+  }
+
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .btn-instagram-nav span {
+    display: none;
+  }
+
+  .btn-instagram-nav {
+    padding: 8px 10px;
+    border-radius: 50%;
+  }
+
+  .cart-nav-btn {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* Hero Section Mobile */
+  .hero {
+    padding: 105px 0 50px;
+  }
+
+  .hero-content h2 {
+    font-size: 2.2rem;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+
+  .hero-content p {
+    font-size: 1.02rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary, .btn-whatsapp, .btn-instagram-hero {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  /* Sticky Category Scroll for Mobile */
+  .category-scroll {
+    position: sticky;
+    top: 64px;
+    z-index: 90;
+    background: rgba(7, 8, 8, 0.95);
+    backdrop-filter: blur(16px);
+    margin-left: -14px;
+    margin-right: -14px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border-subtle);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .category-tabs {
+    gap: 8px;
+  }
+
+  .cat-tab {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    border-radius: var(--radius-md);
+  }
+
+  /* Search Input Mobile */
+  .search-box input {
+    font-size: 0.95rem;
+    padding: 14px 16px 14px 46px;
+    border-radius: var(--radius-md);
+  }
+
+  .search-box svg {
+    left: 14px;
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Dishes Grid Mobile */
   .dishes-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
+  .dish-card {
+    border-radius: var(--radius-md);
+  }
+
+  .dish-image-wrapper {
+    height: 190px;
+  }
+
+  .dish-info {
+    padding: 16px;
+  }
+
+  .dish-info h3 {
+    font-size: 1.15rem;
+  }
+
+  .dish-footer {
+    margin-top: 14px;
+  }
+
+  .btn-add-dish {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    min-height: 44px;
+  }
+
+  /* Modal Sheet Mobile */
+  .modal-overlay {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .modal-card {
+    max-width: 100%;
+    max-height: 92vh;
+    border-radius: 24px 24px 0 0;
+    margin: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .modal-hero {
+    height: 200px;
+  }
+
+  .modal-content-body {
+    padding: 20px 16px 30px;
+  }
+
+  .modal-close-btn {
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .modal-footer-action {
+    position: sticky;
+    bottom: 0;
+    background: var(--bg-dark);
+    padding: 12px 0 max(12px, env(safe-area-inset-bottom));
+    margin-top: 16px;
+    border-top: 1px solid var(--border-subtle);
+  }
+
+  /* Cart Drawer Mobile Sheet */
   .cart-drawer {
     max-width: 100%;
+    right: 0;
+    bottom: -100%;
+    top: auto;
+    height: 92vh;
+    border-radius: 24px 24px 0 0;
+    border-left: none;
+    border-top: 1px solid var(--border-subtle);
+    transition: bottom 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .cart-overlay.active .cart-drawer {
+    bottom: 0;
+  }
+
+  .cart-header {
+    padding: 18px 16px;
+  }
+
+  .cart-body {
+    padding: 16px;
+  }
+
+  .cart-delivery-option {
+    padding: 16px;
+  }
+
+  .cart-footer {
+    padding: 16px 16px max(16px, env(safe-area-inset-bottom));
+  }
+
+  .delivery-selector {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* Admin Panel Mobile */
+  .admin-panel {
+    max-width: 100%;
+    max-height: 95vh;
+    border-radius: 24px 24px 0 0;
+    padding: 20px 16px;
   }
 
   .form-grid {
@@ -1314,5 +1527,40 @@ button {
 
   .form-group.full-width {
     grid-column: span 1;
+  }
+
+  .admin-form-actions {
+    flex-direction: column;
+  }
+
+  .admin-product-item {
+    padding: 10px;
+  }
+
+  /* Footer Mobile */
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-content h2 {
+    font-size: 1.85rem;
+  }
+  .navbar-brand h1 {
+    font-size: 1.1rem;
+  }
+  .cart-text {
+    display: none;
   }
 }
