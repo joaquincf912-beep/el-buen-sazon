@@ -1,4 +1,4 @@
-// ===== WHATSAPP CONFIGURATION =====
+// ===== WHATSAPP CONFIGURATION (v1.3 - Updated Images) =====
 const RESTAURANT_WHATSAPP = '584123460372';
 
 // ===== INITIAL DISHES DATA =====
