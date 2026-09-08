@@ -289,7 +289,7 @@ function renderDishes() {
 
 function getCategoryLabel(cat) {
   const map = {
-    arroces: 'Arroces',
+    arroces: 'Arrozes',
     pollos: 'Pollos Asados',
     bebidas: 'Bebidas'
   };
