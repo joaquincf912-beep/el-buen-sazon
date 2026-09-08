@@ -118,32 +118,32 @@ const defaultDishes = [
   // === BEBIDAS ===
   {
     id: 301,
-    name: 'Refresco de 1 Litro',
-    category: 'bebidas',
-    price: 1.80,
-    tag: null,
-    image: 'https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=600&h=400&fit=crop',
-    description: 'Refresco de 1 litro bien frío. Variedad de sabores disponibles: cola, naranja, uva y más.',
-    extras: []
-  },
-  {
-    id: 302,
     name: 'Refresco de Litro y Medio',
     category: 'bebidas',
     price: 2.10,
     tag: null,
-    image: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=600&h=400&fit=crop',
-    description: 'Refresco familiar de litro y medio, perfecto para acompañar tu combo o compartir en la mesa.',
+    image: 'images/refresco_1_5l.jpg',
+    description: 'Refresco familiar de litro y medio bien frío, perfecto para acompañar tu combo o compartir en la mesa.',
     extras: []
   },
   {
-    id: 303,
+    id: 302,
     name: 'Sun Pequeño',
     category: 'bebidas',
     price: 1.00,
     tag: null,
-    image: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=600&h=400&fit=crop',
-    description: 'Jugo Sun refrescante en presentación individual. Ideal para acompañar tu almuerzo.',
+    image: 'images/sun_pequeno.jpg',
+    description: 'Refresco The Sun Cola bien frío en presentación individual. Ideal para acompañar tu almuerzo.',
+    extras: []
+  },
+  {
+    id: 303,
+    name: 'Refresco de 1 Litro',
+    category: 'bebidas',
+    price: 1.80,
+    tag: null,
+    image: 'images/refresco_1l.jpg',
+    description: 'Refresco de 1 litro bien frío con la frescura perfecta para tus platillos.',
     extras: []
   },
   {
@@ -152,8 +152,8 @@ const defaultDishes = [
     category: 'bebidas',
     price: 1.20,
     tag: null,
-    image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=600&h=400&fit=crop',
-    description: 'Coca-Cola clásica en presentación bombita de vidrio, bien fría. El complemento perfecto.',
+    image: 'images/cocacola_bombita.jpg',
+    description: 'Coca-Cola clásica en presentación bombita de vidrio servida helada sobre hielo. El complemento perfecto.',
     extras: []
   }
 ];
