@@ -244,7 +244,7 @@ function renderDishes() {
   if (filtered.length === 0) {
     dishesGrid.innerHTML = `
       <div style="grid-column: 1/-1; text-align:center; padding: 60px 20px; color: var(--text-muted);">
-        <p style="font-size: 3rem; margin-bottom: 12px;">🍳</p>
+        <p style="font-size: 3rem; margin-bottom: 12px;"><svg viewBox='0 0 24 24' width='48' height='48' fill='currentColor' style='opacity:0.5'><path d='M8.1 13.34l2.83-2.83L3.91 3.5a4.008 4.008 0 000 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z'/></svg></p>
         <h3 style="font-size: 1.5rem; color: #fff; margin-bottom: 8px;">No encontramos platillos</h3>
         <p>Intenta buscar con otro nombre o selecciona otra categoría.</p>
       </div>
@@ -257,7 +257,7 @@ function renderDishes() {
     card.className = 'dish-card';
     card.style.animationDelay = `${idx * 0.05}s`;
 
-    const tagBadge = dish.tag === 'chef' ? '<span class="dish-badge">⭐ Recomendado</span>' : '';
+    const tagBadge = dish.tag === 'chef' ? '<span class="dish-badge">Recomendado</span>' : '';
 
     card.innerHTML = `
       <div class="dish-image-wrapper">
@@ -289,9 +289,9 @@ function renderDishes() {
 
 function getCategoryLabel(cat) {
   const map = {
-    arroces: '🍚 Arroces',
-    pollos: '🍗 Pollos Asados',
-    bebidas: '🥤 Bebidas'
+    arroces: 'Arroces',
+    pollos: 'Pollos Asados',
+    bebidas: 'Bebidas'
   };
   return map[cat] || cat;
 }
@@ -426,7 +426,7 @@ function updateCart() {
   if (cart.length === 0) {
     cartItemsList.innerHTML = `
       <div style="text-align:center; padding: 60px 0; color: var(--text-muted);">
-        <p style="font-size: 3rem;">🛒</p>
+        <p style="font-size: 3rem;"><svg viewBox='0 0 24 24' width='48' height='48' fill='currentColor' style='opacity:0.5'><path d='M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z'/></svg></p>
         <p style="margin-top:10px;">Tu pedido está vacío.</p>
         <p style="font-size:0.85rem;">Agrega deliciosos platillos del menú.</p>
       </div>
@@ -445,7 +445,7 @@ function updateCart() {
       : '';
 
     const notesText = item.notes
-      ? `<br><small style="color:var(--text-muted);">📝 "${item.notes}"</small>`
+      ? `<br><small style="color:var(--text-muted);"> "${item.notes}"</small>`
       : '';
 
     const cartItemEl = document.createElement('div');
@@ -486,24 +486,24 @@ sendWhatsAppOrderBtn.addEventListener('click', () => {
     return;
   }
 
-  let orderText = `*¡NUEVO PEDIDO - EL BUEN SAZÓN DEL CENTRO!* 🍲✨\n\n`;
-  orderText += `*🛵 Modo:* ${deliveryType}\n`;
-  orderText += `*📍 Ubicación/Mesa:* ${address}\n\n`;
-  orderText += `*📋 DETALLE DEL PEDIDO:*\n`;
+  let orderText = `*NUEVO PEDIDO - EL BUEN SAZÓN DEL CENTRO*\n\n`;
+  orderText += `*Modo:* ${deliveryType}\n`;
+  orderText += `*Ubicación/Mesa:* ${address}\n\n`;
+  orderText += `*DETALLE DEL PEDIDO:*\n`;
 
   let total = 0;
   cart.forEach((item, idx) => {
     orderText += `\n${idx + 1}. *${item.name}* (x${item.quantity}) - $${item.totalPrice.toFixed(2)}`;
     if (item.extras.length > 0) {
-      orderText += `\n   ➕ *Extras:* ${item.extras.map(e => e.name).join(', ')}`;
+      orderText += `\n   *Extras:* ${item.extras.map(e => e.name).join(', ')}`;
     }
     if (item.notes) {
-      orderText += `\n   📝 *Nota:* ${item.notes}`;
+      orderText += `\n   *Nota:* ${item.notes}`;
     }
     total += item.totalPrice;
   });
 
-  orderText += `\n\n*💰 TOTAL A PAGAR:* $${total.toFixed(2)}\n\n¡Por favor confirmen recepción del pedido!`;
+  orderText += `\n\n*TOTAL A PAGAR:* $${total.toFixed(2)}\n\nPor favor confirmen recepción del pedido.`;
 
   const url = `https://wa.me/${RESTAURANT_WHATSAPP}?text=${encodeURIComponent(orderText)}`;
   window.open(url, '_blank');
@@ -539,7 +539,7 @@ if (searchInput) {
 
 // ===== SECRET ADMIN LOGIC (KEY: 2828) =====
 window.triggerSecretAdmin = function() {
-  const key = prompt("🔒 Ingrese la clave de administrador:");
+  const key = prompt("Ingrese la clave de administrador:");
   if (key === "2828") {
     openAdminPanel();
     adminLogin.style.display = 'none';
@@ -547,7 +547,7 @@ window.triggerSecretAdmin = function() {
     loginError.style.display = 'none';
     renderAdminDishList();
   } else if (key !== null) {
-    alert("❌ Clave incorrecta.");
+    alert("Clave incorrecta.");
   }
 };
 
@@ -642,7 +642,7 @@ addDishBtn.addEventListener('click', () => {
   document.getElementById('dishDescInput').value = '';
   uploadedDishImageBase64 = null;
   if (dishImageUploadArea) {
-    dishImageUploadArea.innerHTML = `<input type="file" id="dishImageFile" accept="image/*"><div class="upload-icon">📸</div><p>Haz clic o arrastra la foto del platillo aquí</p>`;
+    dishImageUploadArea.innerHTML = `<input type="file" id="dishImageFile" accept="image/*"><div class="upload-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg></div><p>Haz clic o arrastra la foto del platillo aquí</p>`;
   }
 });
 

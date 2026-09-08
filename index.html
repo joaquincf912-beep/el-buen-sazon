@@ -23,9 +23,13 @@
   <nav class="navbar" id="navbar">
     <div class="container">
       <div class="navbar-brand" id="navbarBrand">
-        <div class="logo-icon" onclick="triggerSecretAdmin()" style="cursor:pointer;" title="Acceso Admin">🍲</div>
+        <div class="logo-icon" onclick="triggerSecretAdmin()" style="cursor:pointer;" title="Acceso Admin">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M8.1 13.34l2.83-2.83L3.91 3.5a4.008 4.008 0 000 5.66l4.19 4.18zm6.78-1.81c1.53.71 3.68.21 5.27-1.38 1.91-1.91 2.28-4.65.81-6.12-1.46-1.46-4.2-1.1-6.12.81-1.59 1.59-2.09 3.74-1.38 5.27L3.7 19.87l1.41 1.41L12 14.41l6.88 6.88 1.41-1.41L13.41 13l1.47-1.47z"/></svg>
+        </div>
         <h1>El Buen <span>Sazón</span></h1>
-        <button class="secret-admin-btn" onclick="triggerSecretAdmin()" aria-label="Admin" title="Acceso Privado">🔒</button>
+        <button class="secret-admin-btn" onclick="triggerSecretAdmin()" aria-label="Admin" title="Acceso Privado">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+        </button>
       </div>
 
       <div class="nav-right">
@@ -35,7 +39,7 @@
         </a>
         <button class="cart-nav-btn" id="openCartBtn">
           <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
-          <span class="cart-text">Ver Pedido</span>
+          <span class="cart-text">Mi Pedido</span>
           <span class="cart-badge" id="cartBadge">0</span>
         </button>
       </div>
@@ -50,22 +54,12 @@
     </div>
     <div class="container">
       <div class="hero-content">
-        <div class="status-badge">
-          <span class="pulse-dot"></span>
-          Abierto Ahora • Pedidos por WhatsApp
-        </div>
         <h2>El Buen <span>Sazón</span> del Centro</h2>
         <p>El auténtico sazón casero y gourmet del centro. Almuerzos, especialidades, raciones y las mejores promociones.</p>
 
-        <div class="hero-info-pills">
-          <div class="pill">📱 WhatsApp: 04123460372</div>
-          <div class="pill">📍 El Buen Sazón del Centro</div>
-          <div class="pill">📸 @elbuensazon26_</div>
-        </div>
-
         <div class="hero-actions">
           <a href="#menu" class="btn-primary">
-            🍲 Ver Menú de Hoy
+            Ver Menú de Hoy
           </a>
           <a href="https://wa.me/584123460372?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20en%20El%20Buen%20Sazón%20del%20Centro" target="_blank" class="btn-whatsapp">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/></svg>
@@ -97,16 +91,16 @@
       <div class="category-scroll">
         <div class="category-tabs" id="categoryTabs">
           <button class="cat-tab active" data-cat="todos">
-            <span class="icon">🍽️</span> Todos
+            Todos
           </button>
           <button class="cat-tab" data-cat="arroces">
-            <span class="icon">🍚</span> Arroces
+            Arroces
           </button>
           <button class="cat-tab" data-cat="pollos">
-            <span class="icon">🍗</span> Pollos Asados
+            Pollos Asados
           </button>
           <button class="cat-tab" data-cat="bebidas">
-            <span class="icon">🥤</span> Bebidas
+            Bebidas
           </button>
         </div>
       </div>
@@ -133,14 +127,14 @@
         <p class="modal-desc" id="modalDishDesc"></p>
         
         <div class="modal-extras-section">
-          <h4>🧀 Personaliza tu Platillo (Opcional)</h4>
+          <h4>Personaliza tu Platillo (Opcional)</h4>
           <div class="extras-list" id="modalExtrasList">
             <!-- Checkbox extras -->
           </div>
         </div>
 
         <div class="modal-notes-section">
-          <label for="dishNotes">📝 Instrucciones especiales:</label>
+          <label for="dishNotes">Instrucciones especiales:</label>
           <input type="text" id="dishNotes" placeholder="Ej: Sin cebolla, dressing aparte, etc.">
         </div>
 
@@ -163,7 +157,7 @@
   <div class="cart-overlay" id="cartOverlay">
     <div class="cart-drawer">
       <div class="cart-header">
-        <h3>🛒 Tu Pedido</h3>
+        <h3>Tu Pedido</h3>
         <button class="cart-close-btn" id="closeCartBtn">&times;</button>
       </div>
 
@@ -172,19 +166,19 @@
       </div>
 
       <div class="cart-delivery-option">
-        <h4>🛵 Tipo de Entrega:</h4>
+        <h4>Tipo de Entrega:</h4>
         <div class="delivery-selector">
           <label class="delivery-radio">
             <input type="radio" name="deliveryType" value="Delivery" checked>
-            <span>🛵 Delivery</span>
+            <span>Delivery</span>
           </label>
           <label class="delivery-radio">
             <input type="radio" name="deliveryType" value="Retiro">
-            <span>🛍️ Para Llevar</span>
+            <span>Para Llevar</span>
           </label>
           <label class="delivery-radio">
             <input type="radio" name="deliveryType" value="Mesa">
-            <span>🍽️ En Mesa</span>
+            <span>En Mesa</span>
           </label>
         </div>
         <input type="text" id="deliveryAddress" placeholder="Dirección / Número de Mesa">
@@ -207,7 +201,7 @@
   <div class="admin-overlay" id="adminOverlay">
     <div class="admin-panel">
       <div class="admin-header">
-        <h2>🔒 Administrador de Menú</h2>
+        <h2>Administrador de Menú</h2>
         <button class="admin-close" id="adminClose">&times;</button>
       </div>
 
@@ -218,14 +212,14 @@
           <input type="password" class="admin-input" id="adminPassword" placeholder="Contraseña admin...">
           <button class="admin-btn" id="adminLoginBtn">Entrar</button>
         </div>
-        <p class="login-error" id="loginError">⚠️ Contraseña incorrecta (Clave: 2828).</p>
+        <p class="login-error" id="loginError">Contraseña incorrecta.</p>
       </div>
 
       <!-- Admin Form -->
       <div class="admin-form" id="adminForm" style="display:none;">
-        <div class="admin-success" id="adminSuccess">✅ Platillo agregado exitosamente al menú.</div>
+        <div class="admin-success" id="adminSuccess">Platillo agregado exitosamente al menú.</div>
 
-        <h3 class="form-title">➕ Agregar Nuevo Platillo al Menú</h3>
+        <h3 class="form-title">Agregar Nuevo Platillo al Menú</h3>
         <div class="form-grid">
           <div class="form-group">
             <label for="dishName">Nombre del platillo *</label>
@@ -247,9 +241,9 @@
             <label for="dishTagSelect">Etiqueta Especial</label>
             <select id="dishTagSelect">
               <option value="">Sin etiqueta</option>
-              <option value="chef">⭐ Recomendado</option>
-              <option value="spicy">🌶️ Picante</option>
-              <option value="veggie">🌿 Vegetariano</option>
+              <option value="chef">Recomendado</option>
+              <option value="spicy">Picante</option>
+              <option value="veggie">Vegetariano</option>
             </select>
           </div>
           <div class="form-group full-width">
@@ -264,20 +258,22 @@
             <label>Subir foto de platillo (archivo local)</label>
             <div class="image-upload-area" id="dishImageUploadArea">
               <input type="file" id="dishImageFile" accept="image/*">
-              <div class="upload-icon">📸</div>
+              <div class="upload-icon">
+                <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z"/></svg>
+              </div>
               <p>Haz clic o arrastra la foto del platillo aquí</p>
             </div>
           </div>
         </div>
 
         <div class="admin-form-actions">
-          <button class="admin-btn" id="addDishBtn">➕ Agregar al Menú</button>
-          <button class="admin-btn danger" id="resetMenuBtn">🗑️ Restaurar Menú Predeterminado</button>
+          <button class="admin-btn" id="addDishBtn">Agregar al Menú</button>
+          <button class="admin-btn danger" id="resetMenuBtn">Restaurar Menú Predeterminado</button>
         </div>
 
         <hr class="admin-divider">
 
-        <h3 class="admin-products-title">📋 Platillos Actuales en Menú</h3>
+        <h3 class="admin-products-title">Platillos Actuales en Menú</h3>
         <div class="admin-product-list" id="adminDishList">
           <!-- Filled by JS -->
         </div>
@@ -293,15 +289,15 @@
           <h3>El Buen <span>Sazón</span></h3>
           <p>La mejor cocina casera y fusión del centro. Ingredientes seleccionados con el toque único y auténtico de la casa.</p>
           <div class="footer-secret">
-            <a href="javascript:void(0)" onclick="triggerSecretAdmin()">🔒 Acceso Administrador</a>
+            <a href="javascript:void(0)" onclick="triggerSecretAdmin()">Acceso Administrador</a>
           </div>
         </div>
 
         <div class="footer-info">
-          <h4>📍 Ubicación & Contacto</h4>
-          <p>📍 El Buen Sazón del Centro</p>
-          <p>📱 WhatsApp: <a href="https://wa.me/584123460372" target="_blank" style="color:var(--accent-orange);">04123460372</a></p>
-          <p>📸 Instagram: <a href="https://www.instagram.com/elbuensazon26_/" target="_blank" style="color:var(--accent-orange);">@elbuensazon26_</a></p>
+          <h4>Ubicación y Contacto</h4>
+          <p>Calle 26 entre Carreras 22 y 23, Centro Comercial Mall Center, diagonal a Canguro</p>
+          <p>WhatsApp: <a href="https://wa.me/584123460372" target="_blank" style="color:var(--accent-gold);">04123460372</a></p>
+          <p>Instagram: <a href="https://www.instagram.com/elbuensazon26_/" target="_blank" style="color:var(--accent-gold);">@elbuensazon26_</a></p>
         </div>
       </div>
 

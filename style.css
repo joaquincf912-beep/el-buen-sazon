@@ -164,7 +164,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  color: #fff;
   box-shadow: 0 4px 16px rgba(200, 164, 78, 0.3);
 }
 
@@ -219,28 +219,66 @@ button {
   color: #fff;
 }
 
+.cart-nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-gradient);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: var(--radius-xl);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 16px rgba(200, 164, 78, 0.3);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+.cart-nav-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transition: left 0.5s ease;
+}
+
+.cart-nav-btn:hover::before {
+  left: 100%;
+}
+
 .cart-nav-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(200, 164, 78, 0.5);
+  box-shadow: 0 8px 28px rgba(200, 164, 78, 0.55);
+}
+
+.cart-nav-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(200, 164, 78, 0.3);
 }
 
 .cart-nav-btn svg {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   fill: currentColor;
 }
 
 .cart-badge {
   background: #fff;
-  color: var(--accent-gold);
-  width: 22px;
+  color: #8b6914;
+  min-width: 22px;
   height: 22px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 900;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* ===== HERO ===== */
