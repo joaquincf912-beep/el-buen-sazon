@@ -1,32 +1,32 @@
 /* ===== DESIGN TOKENS & BASE ===== */
 :root {
-  --bg-dark: #0b0c10;
-  --bg-card: rgba(21, 23, 32, 0.75);
-  --bg-card-hover: rgba(30, 33, 46, 0.9);
-  --bg-glass: rgba(255, 255, 255, 0.03);
+  --bg-dark: #070808;
+  --bg-card: rgba(16, 17, 21, 0.85);
+  --bg-card-hover: rgba(24, 26, 32, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.02);
   
-  --text-main: #f8fafc;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-main: #f0ece4;
+  --text-muted: #8a8578;
+  --text-dim: #5c5649;
 
-  --accent-orange: #ff5722;
-  --accent-amber: #f59e0b;
-  --accent-purple: #8b5cf6;
-  --accent-pink: #ec4899;
-  --accent-gradient: linear-gradient(135deg, #ff5722, #f59e0b);
-  --accent-gradient-purple: linear-gradient(135deg, #8b5cf6, #ec4899);
+  --accent-gold: #c8a44e;
+  --accent-amber: #d4a843;
+  --accent-warm: #8b6914;
+  --accent-cream: #f5e6b8;
+  --accent-gradient: linear-gradient(135deg, #c8a44e, #8b6914);
+  --accent-gradient-subtle: linear-gradient(135deg, rgba(200, 164, 78, 0.2), rgba(139, 105, 20, 0.1));
   
   --whatsapp-color: #25d366;
-  --border-subtle: rgba(255, 255, 255, 0.08);
-  --border-glow: rgba(255, 87, 34, 0.35);
+  --border-subtle: rgba(200, 164, 78, 0.1);
+  --border-glow: rgba(200, 164, 78, 0.35);
 
   --radius-sm: 10px;
   --radius-md: 16px;
   --radius-lg: 24px;
   --radius-xl: 32px;
 
-  --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.5);
-  --shadow-glow: 0 0 35px rgba(255, 87, 34, 0.25);
+  --shadow-card: 0 12px 36px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 35px rgba(200, 164, 78, 0.2);
   
   --font-family: 'Outfit', sans-serif;
   --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -100,7 +100,7 @@ button {
 .orb-1 {
   width: 500px;
   height: 500px;
-  background: #ff5722;
+  background: #c8a44e;
   top: -100px;
   left: -100px;
 }
@@ -108,7 +108,7 @@ button {
 .orb-2 {
   width: 600px;
   height: 600px;
-  background: #8b5cf6;
+  background: #3d2e0a;
   bottom: 10%;
   right: -150px;
   animation-delay: -6s;
@@ -117,7 +117,7 @@ button {
 .orb-3 {
   width: 450px;
   height: 450px;
-  background: #f59e0b;
+  background: #8b6914;
   top: 40%;
   left: 30%;
   animation-delay: -12s;
@@ -165,7 +165,7 @@ button {
   align-items: center;
   justify-content: center;
   font-size: 22px;
-  box-shadow: 0 4px 16px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 4px 16px rgba(200, 164, 78, 0.3);
 }
 
 .navbar-brand h1 {
@@ -221,7 +221,7 @@ button {
 
 .cart-nav-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(255, 87, 34, 0.6);
+  box-shadow: 0 6px 24px rgba(200, 164, 78, 0.5);
 }
 
 .cart-nav-btn svg {
@@ -232,7 +232,7 @@ button {
 
 .cart-badge {
   background: #fff;
-  color: var(--accent-orange);
+  color: var(--accent-gold);
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -362,13 +362,13 @@ button {
   border-radius: var(--radius-md);
   font-weight: 700;
   font-size: 1.05rem;
-  box-shadow: 0 6px 24px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 6px 24px rgba(200, 164, 78, 0.3);
   transition: var(--transition-smooth);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(255, 87, 34, 0.6);
+  box-shadow: 0 10px 30px rgba(200, 164, 78, 0.5);
 }
 
 .btn-whatsapp {
@@ -462,8 +462,8 @@ button {
 
 .search-box input:focus {
   outline: none;
-  border-color: var(--accent-orange);
-  box-shadow: 0 0 20px rgba(255, 87, 34, 0.25);
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 20px rgba(200, 164, 78, 0.2);
 }
 
 .preference-filters {
@@ -485,8 +485,8 @@ button {
 }
 
 .pref-btn.active, .pref-btn:hover {
-  background: rgba(255, 87, 34, 0.15);
-  border-color: var(--accent-orange);
+  background: rgba(200, 164, 78, 0.15);
+  border-color: var(--accent-gold);
   color: var(--text-main);
 }
 
@@ -531,7 +531,7 @@ button {
   background: var(--accent-gradient);
   border-color: transparent;
   color: #fff;
-  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 6px 20px rgba(200, 164, 78, 0.35);
 }
 
 .cat-tab:hover:not(.active) {
@@ -610,7 +610,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--accent-orange);
+  color: var(--accent-gold);
   margin-bottom: 6px;
 }
 
@@ -646,9 +646,9 @@ button {
 }
 
 .btn-add-dish {
-  background: rgba(255, 87, 34, 0.15);
-  border: 1px solid var(--accent-orange);
-  color: var(--accent-orange);
+  background: rgba(200, 164, 78, 0.1);
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
   padding: 10px 18px;
   border-radius: var(--radius-md);
   font-weight: 700;
@@ -745,7 +745,7 @@ button {
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--accent-orange);
+  color: var(--accent-gold);
   margin-bottom: 6px;
 }
 
@@ -787,7 +787,7 @@ button {
 
 .extra-item input {
   margin-right: 10px;
-  accent-color: var(--accent-orange);
+  accent-color: var(--accent-gold);
 
 }
 
@@ -857,7 +857,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 0 6px 20px rgba(255, 87, 34, 0.4);
+  box-shadow: 0 6px 20px rgba(200, 164, 78, 0.3);
 }
 
 /* ===== CART DRAWER ===== */
@@ -961,7 +961,7 @@ button {
 
 .cart-item-price {
   font-weight: 800;
-  color: var(--accent-orange);
+  color: var(--accent-gold);
   margin-top: 4px;
 }
 
@@ -1012,8 +1012,8 @@ button {
 }
 
 .delivery-radio input:checked + span {
-  background: rgba(255, 87, 34, 0.2);
-  border-color: var(--accent-orange);
+  background: rgba(200, 164, 78, 0.15);
+  border-color: var(--accent-gold);
   color: #fff;
 }
 

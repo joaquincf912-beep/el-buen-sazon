@@ -3,113 +3,158 @@ const RESTAURANT_WHATSAPP = '584123460372';
 
 // ===== INITIAL DISHES DATA =====
 const defaultDishes = [
+  // === ARROCES ===
   {
     id: 101,
-    name: 'Smash Double Bacon Cheeseburger',
-    category: 'burgers',
-    price: 12.50,
+    name: 'Arroz, Pollo y Ensalada',
+    category: 'arroces',
+    price: 3.50,
     tag: 'chef',
-    image: 'images/burger_double.jpg',
-    description: 'Doble carne smash 100% res (200g), queso cheddar fundido, doble tocineta crujiente, pepinillos y salsa secreta Vibra en pan brioche artesanal.',
-    extras: [
-      { name: 'Extra Queso Cheddar Fundido', price: 1.50 },
-      { name: 'Extra Tocineta Crispy', price: 2.00 },
-      { name: 'Salsa Especial Extra', price: 1.00 }
-    ]
+    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=400&fit=crop',
+    description: 'Arroz blanco bien sazonado acompañado de pollo a la parrilla y ensalada fresca del día. El plato perfecto para un almuerzo completo.',
+    extras: []
   },
   {
     id: 102,
-    name: 'Pizza Pepperoni Artesanal 12"',
-    category: 'pizzas',
-    price: 14.00,
+    name: 'Arroz, Pollo, Ensalada y Lumpia',
+    category: 'arroces',
+    price: 4.00,
     tag: 'chef',
-    image: 'images/pizza_pepperoni.jpg',
-    description: 'Masa de fermentación lenta de 48 horas, salsa de tomate San Marzano, abundante queso mozzarella fior di latte y pepperoni crocante.',
-    extras: [
-      { name: 'Borde Relleno de Queso', price: 2.50 },
-      { name: 'Extra Pepperoni', price: 2.00 },
-      { name: 'Miel Picante Jalapeño', price: 1.50 }
-    ]
+    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&h=400&fit=crop',
+    description: 'Nuestro clásico arroz con pollo y ensalada fresca, acompañado de una crujiente lumpia dorada rellena de vegetales.',
+    extras: []
   },
   {
     id: 103,
-    name: 'Tacos de Birria Fusión (3 uds)',
-    category: 'tacos',
-    price: 11.00,
-    tag: 'spicy',
-    image: 'images/tacos_birria.jpg',
-    description: 'Tortillas de maíz dorado en la grasa de la carne, res desmechada cocida a fuego lento por 8 horas, queso gratinado, cilantro, cebolla y consome caliente.',
-    extras: [
-      { name: 'Taco Adicional de Birria', price: 3.50 },
-      { name: 'Guacamole Casero', price: 2.00 },
-      { name: 'Salsa Macha Picante Extra', price: 1.00 }
-    ]
+    name: 'Arroz, Pollo y Chop Suey',
+    category: 'arroces',
+    price: 4.00,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?w=600&h=400&fit=crop',
+    description: 'Arroz blanco acompañado de jugoso pollo y un exquisito chop suey de vegetales salteados al wok con salsa especial.',
+    extras: []
   },
   {
     id: 104,
-    name: 'Dragon Roll Sushi (10 Pzs)',
-    category: 'sushi',
-    price: 15.00,
-    tag: 'chef',
-    image: 'images/sushi_dragon.jpg',
-    description: 'Relleno de langostino empanizado en panko y queso crema, cubierto con finas láminas de aguacate fresco, salmón, salsa unagi dulce y sésamo tostado.',
-    extras: [
-      { name: 'Salsa Unagi Extra', price: 1.00 },
-      { name: 'Salsa Spicy Mayo', price: 1.00 },
-      { name: 'Porción Extra de Gari (Jengibre)', price: 0.50 }
-    ]
+    name: 'Arroz, Pollo y Refresco',
+    category: 'arroces',
+    price: 4.00,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop',
+    description: 'Combo completo: arroz bien sazonado con pollo al estilo de la casa y tu refresco favorito incluido. ¡La mejor oferta!',
+    extras: []
   },
   {
     id: 105,
-    name: 'Loaded Cheddar Bacon Fries',
-    category: 'entradas',
-    price: 8.50,
-    tag: 'chef',
-    image: 'images/loaded_fries.jpg',
-    description: 'Papas fritas crujientes bañadas en salsa de queso cheddar fundido artesanal, tocineta bits ahumada, cebollín fresco y dip de sour cream.',
-    extras: [
-      { name: 'Extra Queso Cheddar', price: 1.50 },
-      { name: 'Rodajas de Jalapeño', price: 1.00 },
-      { name: 'Carne Pulled Pork (100g)', price: 3.00 }
-    ]
+    name: 'Arroz, Pollo y Papas Fritas',
+    category: 'arroces',
+    price: 4.00,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&h=400&fit=crop',
+    description: 'Arroz blanco con pollo a la parrilla acompañado de papas fritas crujientes y doradas. Contundente y delicioso.',
+    extras: []
   },
   {
     id: 106,
-    name: 'Wings BBQ Ahumadas (8 Uds)',
-    category: 'entradas',
-    price: 9.50,
+    name: 'Pollo Salteado',
+    category: 'arroces',
+    price: 4.00,
     tag: null,
-    image: 'images/wings_bbq.jpg',
-    description: 'Alitas de pollo crujientes glaseadas en salsa BBQ ahumada de la casa. Acompañadas de bastones de apio y aderezo ranch de ajo.',
-    extras: [
-      { name: 'Aderezo Ranch Extra', price: 1.00 },
-      { name: 'Salsa Buffalo Picante', price: 1.00 }
-    ]
+    image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&h=400&fit=crop',
+    description: 'Trozos de pollo salteados al wok con vegetales frescos, pimentón, cebolla y salsas especiales de la casa.',
+    extras: []
+  },
+  // === POLLOS ASADOS ===
+  {
+    id: 201,
+    name: '1/4 Pollo con Arroz, Lumpia y Ensalada',
+    category: 'pollos',
+    price: 6.00,
+    tag: 'chef',
+    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&h=400&fit=crop',
+    description: 'Un cuarto de pollo asado a las brasas con arroz, crujiente lumpia y ensalada fresca. Sabor ahumado irresistible.',
+    extras: []
   },
   {
-    id: 107,
-    name: 'Mojito Artesanal Fusión',
-    category: 'bebidas',
+    id: 202,
+    name: '1/2 Pollo con Arroz, Lumpia, Ensalada y Hallaquitas',
+    category: 'pollos',
+    price: 9.00,
+    tag: 'chef',
+    image: 'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&h=400&fit=crop',
+    description: 'Medio pollo asado jugoso acompañado de arroz, lumpia crujiente, ensalada fresca y hallaquitas venezolanas.',
+    extras: []
+  },
+  {
+    id: 203,
+    name: 'Pollo Entero con 4 Hallaquitas y Ensalada',
+    category: 'pollos',
+    price: 11.00,
+    tag: 'chef',
+    image: 'https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=600&h=400&fit=crop',
+    description: 'Pollo entero asado a las brasas, dorado y jugoso, con 4 hallaquitas tradicionales y ensalada fresca generosa.',
+    extras: []
+  },
+  {
+    id: 204,
+    name: 'Combo Familiar: Pollo + 2 Arroz + 3 Ensaladas + 3 Hallaquitas',
+    category: 'pollos',
+    price: 14.00,
+    tag: 'chef',
+    image: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=600&h=400&fit=crop',
+    description: 'El combo ideal para compartir en familia: pollo entero asado, 2 porciones de arroz, 3 ensaladas y 3 hallaquitas.',
+    extras: []
+  },
+  {
+    id: 205,
+    name: '1/2 Pollo con 3 Hallaquitas y Ensalada',
+    category: 'pollos',
     price: 7.00,
     tag: null,
-    image: 'images/cocktail_mojito.jpg',
-    description: 'Refrescante cóctel con ron blanco premium, menta fresca machacada, zumo de lima recién exprimido, azúcar de caña y toque de maracuyá.',
-    extras: [
-      { name: 'Shot Extra de Ron', price: 2.50 }
-    ]
+    image: 'https://images.unsplash.com/photo-1610057099443-fde6c99db9e1?w=600&h=400&fit=crop',
+    description: 'Medio pollo asado a la brasa con 3 hallaquitas venezolanas recién hechas y ensalada fresca del día.',
+    extras: []
+  },
+  // === BEBIDAS ===
+  {
+    id: 301,
+    name: 'Refresco de 1 Litro',
+    category: 'bebidas',
+    price: 1.80,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=600&h=400&fit=crop',
+    description: 'Refresco de 1 litro bien frío. Variedad de sabores disponibles: cola, naranja, uva y más.',
+    extras: []
   },
   {
-    id: 108,
-    name: 'Churros con Choco-Nutella',
-    category: 'postres',
-    price: 6.00,
-    tag: 'veggie',
-    image: 'images/dessert_churros.jpg',
-    description: 'Churros crujientes espolvoreados con azúcar refinada y canela. Servidos calientes con dip de Nutella y manjar de dulce de leche.',
-    extras: [
-      { name: 'Dip Extra de Nutella', price: 1.50 },
-      { name: 'Bola de Helado Mantecado', price: 2.00 }
-    ]
+    id: 302,
+    name: 'Refresco de Litro y Medio',
+    category: 'bebidas',
+    price: 2.10,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=600&h=400&fit=crop',
+    description: 'Refresco familiar de litro y medio, perfecto para acompañar tu combo o compartir en la mesa.',
+    extras: []
+  },
+  {
+    id: 303,
+    name: 'Sun Pequeño',
+    category: 'bebidas',
+    price: 1.00,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=600&h=400&fit=crop',
+    description: 'Jugo Sun refrescante en presentación individual. Ideal para acompañar tu almuerzo.',
+    extras: []
+  },
+  {
+    id: 304,
+    name: 'Coca-Cola Bombita',
+    category: 'bebidas',
+    price: 1.20,
+    tag: null,
+    image: 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=600&h=400&fit=crop',
+    description: 'Coca-Cola clásica en presentación bombita de vidrio, bien fría. El complemento perfecto.',
+    extras: []
   }
 ];
 
@@ -188,17 +233,11 @@ function renderDishes() {
   const searchTerm = searchInput ? searchInput.value.toLowerCase().trim() : '';
 
   const filtered = dishes.filter(d => {
-    // Category match
     const matchCat = selectedCategory === 'todos' || d.category === selectedCategory;
-    
-    // Preference match
     const matchPref = selectedPref === 'todos' || d.tag === selectedPref;
-
-    // Search term match
     const matchSearch = !searchTerm || 
       d.name.toLowerCase().includes(searchTerm) || 
       d.description.toLowerCase().includes(searchTerm);
-
     return matchCat && matchPref && matchSearch;
   });
 
@@ -218,9 +257,7 @@ function renderDishes() {
     card.className = 'dish-card';
     card.style.animationDelay = `${idx * 0.05}s`;
 
-    const tagBadge = dish.tag === 'chef' ? '<span class="dish-badge">⭐ Recomendado</span>' :
-                     dish.tag === 'spicy' ? '<span class="dish-badge" style="color:#ef4444;">🌶️ Picante</span>' :
-                     dish.tag === 'veggie' ? '<span class="dish-badge" style="color:#4ade80;">🌿 Vegetariano</span>' : '';
+    const tagBadge = dish.tag === 'chef' ? '<span class="dish-badge">⭐ Recomendado</span>' : '';
 
     card.innerHTML = `
       <div class="dish-image-wrapper">
@@ -240,7 +277,6 @@ function renderDishes() {
       </div>
     `;
 
-    // Whole card click
     card.addEventListener('click', (e) => {
       if (!e.target.closest('.btn-add-dish')) {
         openDishModal(dish.id);
@@ -253,13 +289,9 @@ function renderDishes() {
 
 function getCategoryLabel(cat) {
   const map = {
-    burgers: 'Burgers',
-    pizzas: 'Pizzas',
-    tacos: 'Tacos & Fusión',
-    sushi: 'Sushi Rolls',
-    entradas: 'Entradas',
-    bebidas: 'Bebidas',
-    postres: 'Postres'
+    arroces: '🍚 Arroces',
+    pollos: '🍗 Pollos Asados',
+    bebidas: '🥤 Bebidas'
   };
   return map[cat] || cat;
 }
@@ -291,12 +323,12 @@ window.openDishModal = function(id) {
           <input type="checkbox" value="${i}" onchange="toggleModalExtra(${i})">
           <span>${extra.name}</span>
         </div>
-        <span style="font-weight:700; color:var(--accent-orange);">+$${extra.price.toFixed(2)}</span>
+        <span style="font-weight:700; color:var(--accent-gold);">+$${extra.price.toFixed(2)}</span>
       `;
       modalExtrasList.appendChild(label);
     });
   } else {
-    modalExtrasList.innerHTML = '<p style="color:var(--text-muted); font-size:0.9rem;">Sin adicionales para este platillo.</p>';
+    modalExtrasList.innerHTML = '<p style="color:var(--text-muted); font-size:0.9rem;">Platillo sin opciones adicionales.</p>';
   }
 
   updateModalPrice();
@@ -386,11 +418,9 @@ cartOverlay.addEventListener('click', (e) => {
 });
 
 function updateCart() {
-  // Update badge
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   cartBadge.textContent = totalItems;
 
-  // Render list
   cartItemsList.innerHTML = '';
 
   if (cart.length === 0) {
@@ -411,7 +441,7 @@ function updateCart() {
     subtotal += item.totalPrice;
 
     const extrasText = item.extras.length > 0
-      ? `<br><small style="color:var(--accent-amber);">+ ${item.extras.map(e => e.name).join(', ')}</small>`
+      ? `<br><small style="color:var(--accent-gold);">+ ${item.extras.map(e => e.name).join(', ')}</small>`
       : '';
 
     const notesText = item.notes
@@ -580,7 +610,7 @@ addDishBtn.addEventListener('click', () => {
     return;
   }
 
-  const finalImage = uploadedDishImageBase64 || imageUrl || 'images/burger_double.jpg';
+  const finalImage = uploadedDishImageBase64 || imageUrl || 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop';
 
   const newDish = {
     id: Date.now(),
