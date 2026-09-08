@@ -111,8 +111,8 @@ const defaultDishes = [
     category: 'pollos',
     price: 7.00,
     tag: null,
-    image: 'images/medio_pollo_combo.jpg',
-    description: 'Medio pollo asado a la brasa con 3 hallaquitas venezolanas recién hechas y ensalada fresca del día.',
+    image: 'images/medio_pollo_hallaquitas.jpg',
+    description: 'Medio pollo asado a la brasa con 3 hallaquitas tradicionales en hoja y ensalada cole slaw fresca.',
     extras: []
   },
   // === BEBIDAS ===
