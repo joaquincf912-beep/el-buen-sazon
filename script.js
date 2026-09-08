@@ -6,62 +6,62 @@ const defaultDishes = [
   // === ARROCES ===
   {
     id: 101,
-    name: 'Arroz, Pollo y Ensalada',
+    name: 'Arroz, Pollo y Papas Fritas',
     category: 'arroces',
-    price: 3.50,
+    price: 4.00,
     tag: 'chef',
-    image: 'https://images.unsplash.com/photo-1512058564366-18510be2db19?w=600&h=400&fit=crop',
-    description: 'Arroz blanco bien sazonado acompañado de pollo a la parrilla y ensalada fresca del día. El plato perfecto para un almuerzo completo.',
+    image: 'images/arroz_pollo_papas.jpg',
+    description: 'Arroz frito bien sazonado acompañado de jugoso pollo dorado y papas fritas crujientes. El plato más pedido.',
     extras: []
   },
   {
     id: 102,
-    name: 'Arroz, Pollo, Ensalada y Lumpia',
+    name: 'Arroz, Pollo y Ensalada',
     category: 'arroces',
-    price: 4.00,
+    price: 3.50,
     tag: 'chef',
-    image: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?w=600&h=400&fit=crop',
-    description: 'Nuestro clásico arroz con pollo y ensalada fresca, acompañado de una crujiente lumpia dorada rellena de vegetales.',
+    image: 'images/arroz_pollo_ensalada.jpg',
+    description: 'Arroz frito casero acompañado de presa de pollo dorada y ensalada fresca con tomate, pepino y aderezo especial.',
     extras: []
   },
   {
     id: 103,
+    name: 'Arroz, Pollo, Ensalada y Lumpia',
+    category: 'arroces',
+    price: 4.00,
+    tag: 'chef',
+    image: 'images/arroz_pollo_lumpia.jpg',
+    description: 'Arroz estilo chino con pollo, ensalada fresca y crujientes lumpias tradicionales rellenas.',
+    extras: []
+  },
+  {
+    id: 104,
+    name: 'Pollo Salteado',
+    category: 'arroces',
+    price: 4.00,
+    tag: null,
+    image: 'images/pollo_salteado.jpg',
+    description: 'Trozos de pechuga de pollo salteados al wok con pimentones rojos, amarillos y verdes, calabacín y vegetales frescos.',
+    extras: []
+  },
+  {
+    id: 105,
     name: 'Arroz, Pollo y Chop Suey',
     category: 'arroces',
     price: 4.00,
     tag: null,
     image: 'https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?w=600&h=400&fit=crop',
-    description: 'Arroz blanco acompañado de jugoso pollo y un exquisito chop suey de vegetales salteados al wok con salsa especial.',
+    description: 'Arroz blanco acompañado de jugoso pollo y un exquisito chop suey de vegetales salteados al wok.',
     extras: []
   },
   {
-    id: 104,
+    id: 106,
     name: 'Arroz, Pollo y Refresco',
     category: 'arroces',
     price: 4.00,
     tag: null,
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop',
-    description: 'Combo completo: arroz bien sazonado con pollo al estilo de la casa y tu refresco favorito incluido. ¡La mejor oferta!',
-    extras: []
-  },
-  {
-    id: 105,
-    name: 'Arroz, Pollo y Papas Fritas',
-    category: 'arroces',
-    price: 4.00,
-    tag: null,
-    image: 'https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=600&h=400&fit=crop',
-    description: 'Arroz blanco con pollo a la parrilla acompañado de papas fritas crujientes y doradas. Contundente y delicioso.',
-    extras: []
-  },
-  {
-    id: 106,
-    name: 'Pollo Salteado',
-    category: 'arroces',
-    price: 4.00,
-    tag: null,
-    image: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&h=400&fit=crop',
-    description: 'Trozos de pollo salteados al wok con vegetales frescos, pimentón, cebolla y salsas especiales de la casa.',
+    description: 'Combo completo: arroz bien sazonado con pollo al estilo de la casa y tu refresco favorito incluido.',
     extras: []
   },
   // === POLLOS ASADOS ===
@@ -72,7 +72,7 @@ const defaultDishes = [
     price: 6.00,
     tag: 'chef',
     image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&h=400&fit=crop',
-    description: 'Un cuarto de pollo asado a las brasas con arroz, crujiente lumpia y ensalada fresca. Sabor ahumado irresistible.',
+    description: 'Un cuarto de pollo asado a las brasas con arroz, crujiente lumpia y ensalada fresca.',
     extras: []
   },
   {
@@ -91,8 +91,8 @@ const defaultDishes = [
     category: 'pollos',
     price: 11.00,
     tag: 'chef',
-    image: 'https://images.unsplash.com/photo-1594221708779-94832f4320d1?w=600&h=400&fit=crop',
-    description: 'Pollo entero asado a las brasas, dorado y jugoso, con 4 hallaquitas tradicionales y ensalada fresca generosa.',
+    image: 'images/pollo_entero_hallaquitas.png',
+    description: 'Pollo entero asado a las brasas, dorado y jugoso, con 4 hallaquitas tradicionales, ensalada cole slaw y guasacaca de la casa.',
     extras: []
   },
   {
