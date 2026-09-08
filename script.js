@@ -71,8 +71,8 @@ const defaultDishes = [
     category: 'pollos',
     price: 6.00,
     tag: 'chef',
-    image: 'https://images.unsplash.com/photo-1598103442097-8b74394b95c6?w=600&h=400&fit=crop',
-    description: 'Un cuarto de pollo asado a las brasas con arroz, crujiente lumpia y ensalada fresca.',
+    image: 'images/cuarto_pollo_combo.jpg',
+    description: 'Un cuarto de pollo asado doradito con yuca/papas, ensalada cole slaw fresca y aderezo especial.',
     extras: []
   },
   {
@@ -81,8 +81,8 @@ const defaultDishes = [
     category: 'pollos',
     price: 9.00,
     tag: 'chef',
-    image: 'https://images.unsplash.com/photo-1632778149955-e80f8ceca2e8?w=600&h=400&fit=crop',
-    description: 'Medio pollo asado jugoso acompañado de arroz, lumpia crujiente, ensalada fresca y hallaquitas venezolanas.',
+    image: 'images/medio_pollo_combo.jpg',
+    description: 'Medio pollo asado jugoso acompañado de arroz frito especial, lumpia crujiente y salsa agridulce.',
     extras: []
   },
   {
@@ -92,7 +92,7 @@ const defaultDishes = [
     price: 11.00,
     tag: 'chef',
     image: 'images/pollo_entero_hallaquitas.png',
-    description: 'Pollo entero asado a las brasas, dorado y jugoso, con 4 hallaquitas tradicionales, ensalada cole slaw y guasacaca de la casa.',
+    description: 'Pollo entero asado a las brasas jugoso con 4 hallaquitas tradicionales, ensalada cole slaw y guasacaca verde.',
     extras: []
   },
   {
@@ -101,8 +101,8 @@ const defaultDishes = [
     category: 'pollos',
     price: 14.00,
     tag: 'chef',
-    image: 'https://images.unsplash.com/photo-1606728035253-49e8a23146de?w=600&h=400&fit=crop',
-    description: 'El combo ideal para compartir en familia: pollo entero asado, 2 porciones de arroz, 3 ensaladas y 3 hallaquitas.',
+    image: 'images/combo_familiar.png',
+    description: 'Banquete familiar completo: pollo entero asado a las brasas, hallaquitas, ensalada fresca y guasacaca especial de la casa.',
     extras: []
   },
   {
@@ -111,7 +111,7 @@ const defaultDishes = [
     category: 'pollos',
     price: 7.00,
     tag: null,
-    image: 'https://images.unsplash.com/photo-1610057099443-fde6c99db9e1?w=600&h=400&fit=crop',
+    image: 'images/medio_pollo_combo.jpg',
     description: 'Medio pollo asado a la brasa con 3 hallaquitas venezolanas recién hechas y ensalada fresca del día.',
     extras: []
   },
