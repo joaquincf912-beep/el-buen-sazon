@@ -50,7 +50,7 @@ const defaultDishes = [
     category: 'arroces',
     price: 4.00,
     tag: null,
-    image: 'https://images.unsplash.com/photo-1569058242567-93de6f36f8e6?w=600&h=400&fit=crop',
+    image: 'images/arroz_chop_suey.jpg',
     description: 'Arroz blanco acompañado de jugoso pollo y un exquisito chop suey de vegetales salteados al wok.',
     extras: []
   },
@@ -60,7 +60,7 @@ const defaultDishes = [
     category: 'arroces',
     price: 4.00,
     tag: null,
-    image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop',
+    image: 'images/arroz_combo_refresco.jpg',
     description: 'Combo completo: arroz bien sazonado con pollo al estilo de la casa y tu refresco favorito incluido.',
     extras: []
   },
@@ -91,7 +91,7 @@ const defaultDishes = [
     category: 'pollos',
     price: 11.00,
     tag: 'chef',
-    image: 'images/pollo_entero_hallaquitas.png',
+    image: 'images/pollo_entero_hallaquitas.jpg',
     description: 'Pollo entero asado a las brasas jugoso con 4 hallaquitas tradicionales, ensalada cole slaw y guasacaca verde.',
     extras: []
   },
@@ -101,7 +101,7 @@ const defaultDishes = [
     category: 'pollos',
     price: 14.00,
     tag: 'chef',
-    image: 'images/combo_familiar.png',
+    image: 'images/combo_familiar.jpg',
     description: 'Banquete familiar completo: pollo entero asado a las brasas, hallaquitas, ensalada fresca y guasacaca especial de la casa.',
     extras: []
   },
