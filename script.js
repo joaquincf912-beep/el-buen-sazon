@@ -20,7 +20,7 @@ const defaultDishes = [
     category: 'arroces',
     price: 3.50,
     tag: 'chef',
-    image: 'images/arroz_pollo_ensalada.jpg',
+    image: 'images/arroz_pollo_ensalada.jpg?v=6.0',
     description: 'Arroz frito casero acompañado de presa de pollo dorada y ensalada fresca con tomate, pepino y aderezo especial.',
     extras: []
   },
